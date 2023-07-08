@@ -1,1 +1,168 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100;
+  src: local("Roboto Thin"), local("Roboto-Thin"),
+  url(./assets/webfonts/Roboto-Thin.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 200;
+  src: local("Roboto Light"), local("Roboto-Light"),
+  url(./assets/webfonts/Roboto-Light.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Roboto Regular"), local("Roboto-Regular"),
+  url(./assets/webfonts/Roboto-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto Bold"), local("Roboto-Bold"),
+  url(./assets/webfonts/Roboto-Bold.ttf) format("truetype");
+}
+
+:root {
+  --primary-text: #666666;
+  --primary-background: #e5e5e5;
+  --dark: #333333;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--primary-text);
+}
+
+html,
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ------------------------ */
+
+.container {
+  margin: 0 auto;
+}
+
+/* ------------------------- */
+
+@media only screen and (max-width: 992px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .container {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    width: 50%;
+  }
+}
+
+/* ------------------------- */
+.btn {
+  border: none;
+  border-radius: 500px;
+  margin: 0;
+  padding: 0 30px;
+  display: inline-block;
+  line-height: 38px;
+  vertical-align: center;
+  text-align: center;
+  color: inherit;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #d5d5d5;
+}
+
+.btn:active {
+  background-color: #c5c5c5;
+}
+
+.btn-sm {
+  padding: 0 15px;
+  line-height: 28px;
+}
+
+.input {
+  border: 1px solid var(--primary-background);
+  padding: 0 10px;
+  height: 40px;
+  color: inherit;
+  width: 100%;
+  max-width: 100%;
+  font: inherit;
+  box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------- */
+
+.margin {
+  margin-top: 20px;
+}
+
+.margin-left-sm {
+  margin-left: 5px;
+}
