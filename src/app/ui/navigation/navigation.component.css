@@ -1,0 +1,11 @@
+nav {
+  min-height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: var(--dark);
+}
