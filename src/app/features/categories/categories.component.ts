@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import {faComments, faPlay, faPlus, faTrash} from "@fortawesome/free-solid-svg-icons";
+import {Component} from '@angular/core';
+import {faPlus} from "@fortawesome/free-solid-svg-icons";
 
 @Component({
   selector: 'app-categories',
@@ -7,8 +7,5 @@ import {faComments, faPlay, faPlus, faTrash} from "@fortawesome/free-solid-svg-i
   styleUrls: ['./categories.component.css']
 })
 export class CategoriesComponent {
-  trashIcon = faTrash;
-  commentsIcon =faComments;
-  playIcon = faPlay;
-  plusIcon =faPlus;
+   plusIcon =faPlus;
 }
