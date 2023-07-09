@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import {Component, EventEmitter, Input, Output} from '@angular/core';
 import {faComments, faPlay, faTrash} from "@fortawesome/free-solid-svg-icons";
 
 @Component({
@@ -8,8 +8,13 @@ import {faComments, faPlay, faTrash} from "@fortawesome/free-solid-svg-icons";
 })
 export class CategoryCardComponent {
   @Input() categoryName?: string;
+  @Output() removeClicked = new EventEmitter<void>();
 
   trashIcon = faTrash;
-  commentsIcon =faComments;
+  commentsIcon = faComments;
   playIcon = faPlay;
+
+  emitRemove() {
+    this.removeClicked.emit();
+  }
 }

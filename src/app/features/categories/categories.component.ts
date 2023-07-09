@@ -8,13 +8,19 @@ import {Category} from "../../models/category";
   styleUrls: ['./categories.component.css']
 })
 export class CategoriesComponent {
-   plusIcon =faPlus;
+  plusIcon = faPlus;
 
-   categories: Category[] = [{name: "Sport"}, {name: "Dom"}];
-   categoryName = "";
+  categories: Category[] = [{name: "Sport"}, {name: "Dom"}];
+  categoryName = "";
 
-   addCategory() {
-     this.categories.push({name:this.categoryName})
-     this.categoryName = "";
-   }
+  addCategory() {
+    this.categories.push({name: this.categoryName})
+    this.categoryName = "";
+  }
+
+  removeCategory(category: Category) {
+  let indexOf = this.categories.indexOf(category);
+
+  this.categories.splice(indexOf, 1);
+  }
 }
