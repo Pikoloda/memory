@@ -1,5 +1,6 @@
 import {Component} from '@angular/core';
 import {faPlus} from "@fortawesome/free-solid-svg-icons";
+import {Category} from "../../models/category";
 
 @Component({
   selector: 'app-categories',
@@ -8,4 +9,12 @@ import {faPlus} from "@fortawesome/free-solid-svg-icons";
 })
 export class CategoriesComponent {
    plusIcon =faPlus;
+
+   categories: Category[] = [{name: "Sport"}, {name: "Dom"}];
+   categoryName = "";
+
+   addCategory() {
+     this.categories.push({name:this.categoryName})
+     this.categoryName = "";
+   }
 }
