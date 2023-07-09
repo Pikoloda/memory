@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
 import {faTrash} from "@fortawesome/free-solid-svg-icons";
 
 @Component({
@@ -7,5 +7,8 @@ import {faTrash} from "@fortawesome/free-solid-svg-icons";
   styleUrls: ['./flash-card.component.css']
 })
 export class FlashCardComponent {
-  trashIcon = faTrash
+  @Input() word!: string;
+  @Input() translation!: string;
+
+  trashIcon = faTrash;
 }
