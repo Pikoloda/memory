@@ -2,7 +2,7 @@
   <div class="container">
     <button class="btn" [routerLink]="['']">Powrót</button>
     <h2>{{category?.name}}</h2>
-    <app-flash-card [word]="card.word" [translation]="card.translation" *ngFor="let card of flashCards" ></app-flash-card>
+    <app-flash-card (removeClicked)="removeCard(card)" [word]="card.word" [translation]="card.translation" *ngFor="let card of flashCards" ></app-flash-card>
     <div class="margin input-row">
       <input [(ngModel)]="word" type="text" placeholder="Pytanie" class="input">
       <input [(ngModel)]="translation" type="text" placeholder="Tłumaczenie" class="input">

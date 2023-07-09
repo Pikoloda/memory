@@ -21,4 +21,8 @@ export class FlashCardService {
     return this.httpClient.post<FlashCard>(`${BASE_API_URL}/${categoryId}/cards`, card);
   }
 
+  removeCard(categoryId: number, cardId: number): Observable<any> {
+    return this.httpClient.delete(`${BASE_API_URL}/${categoryId}/cards/${cardId}`);
+  }
+
 }

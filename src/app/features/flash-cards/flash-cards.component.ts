@@ -51,8 +51,15 @@ export class FlashCardsComponent implements OnInit {
 
   constructor(private activatedRoute: ActivatedRoute,
               private flashCarsService: FlashCardService,
-              private categoryService: CategoryService) {
-  }
+              private categoryService: CategoryService) {}
 
   plusIcon = faPlus;
+
+  removeCard(card: FlashCard) {
+    if (card.card_id && this.category?.category_id) {
+      this.flashCarsService
+        .removeCard(this.category.category_id, card.card_id)
+        .subscribe(() => this.flashCards.splice(this.flashCards.indexOf(card), 1));
+    }
+  }
 }
