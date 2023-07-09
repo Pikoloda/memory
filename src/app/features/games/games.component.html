@@ -1,1 +1,18 @@
-<p>games works!</p>
+<section>
+  <div class="container">
+    <button class="btn" [routerLink]="['']">Powrót</button>
+    <h3>Tryb Gry</h3>
+    <div class="card">
+      <input type ="radio" name="gameType" [(ngModel)]="mode" [value]="'flashcard'">
+      <span>Wiem / Nie wiem</span>
+    </div>
+    <div class="card margin">
+      <input type ="radio" name="gameType" [(ngModel)]="mode" [value]="'write'">
+      <span>Wpisywanie</span>
+    </div>
+    <div class="action-row margin">
+      <button (click)="startGame()" class="btn">Start</button>
+    </div>
+  </div>
+</section>
+
