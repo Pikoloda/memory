@@ -10,6 +10,7 @@ import { CategoryCardComponent } from './ui/category-card/category-card.componen
 import {FormsModule} from "@angular/forms";
 import { FlashCardsComponent } from './features/flash-cards/flash-cards.component';
 import { GamesComponent } from './features/games/games.component';
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { GamesComponent } from './features/games/games.component';
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
