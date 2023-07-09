@@ -1,6 +1,6 @@
 <section>
   <div class="container">
-    <app-category-card (removeClicked)="removeCategory(category)" *ngFor="let category of categories" [categoryName]="category.name"></app-category-card>
+    <app-category-card (removeClicked)="removeCategory(category)" *ngFor="let category of categories" [category]="category"></app-category-card>
     <input (keydown.enter)="addCategory()" [(ngModel)]="categoryName" class="input margin" type="text"
            placeholder="Nazwa kategorii">
     <button (click)="addCategory()" class="btn margin">

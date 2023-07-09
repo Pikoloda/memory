@@ -1,1 +1,14 @@
-<p>flash-cards works!</p>
+<section>
+  <div class="container">
+    <button class="btn" [routerLink]="['']">Powrót</button>
+    <h2>Nazwa Kategorii</h2>
+    <app-flash-card></app-flash-card>
+    <div class="margin input-row">
+      <input type="text" placeholder="Pytanie" class="input">
+      <input type="text" placeholder="Tłumaczenie" class="input">
+    </div>
+    <button class="btn margin">
+      <fa-icon [icon]="plusIcon"></fa-icon>
+    </button>
+  </div>
+</section>
