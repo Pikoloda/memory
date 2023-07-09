@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NavigationComponent } from './ui/navigation/navigation.component';
+import { CategoriesComponent } from './features/categories/categories.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavigationComponent
+    NavigationComponent,
+    CategoriesComponent
   ],
   imports: [
     BrowserModule,

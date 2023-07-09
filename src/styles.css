@@ -53,6 +53,11 @@ a {
   text-decoration: none;
 }
 
+section {
+  margin: 70px 0;
+
+}
+
 /* ------------------------ */
 
 .container {
@@ -80,6 +85,12 @@ a {
 }
 
 /* ------------------------- */
+.card {
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
+}
+
 .btn {
   border: none;
   border-radius: 500px;
